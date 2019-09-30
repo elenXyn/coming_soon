@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Registered emails</title>
+</head>
+
+<body>
+    <h1>Signed Up email</h1>
+    {% if email %}
+    <ul>
+        {% for em in email %}
+        <li>Email: {{em.email}}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No email found.</p>
+    {% endif %}
+</body>
+
+</html>
